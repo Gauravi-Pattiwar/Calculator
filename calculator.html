@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calstyle.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="content_box">
+        <div class="display"><input type="text" id="display" disabled /></div>
+        <div class="button_container">
+          <button>1</button>
+          <button>2</button>
+          <button class="operator" data-op="-">-</button>
+          <button>3</button>
+          <button>4</button>
+          <button class="operator" data-op="+">+</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="operator" data-op="*">*</button>
+          <button>7</button>
+          <button>8</button>
+          <button class="operator" data-op="/">/</button>
+          <button>9</button>
+          <button>0</button>
+          <button class="operator" data-op="%">%</button>
+          <button>.</button>
+          <button id="equals">=</button>
+          <button class="delete" id="delete" style="font-size: 38px">
+            DEL
+          </button>
+          <button class="clear" id="clear" style="font-size: 38px">AC</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

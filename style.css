@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(background.png);
+  background-position: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.title {
+  animation: slideIn 1.2s ease-in-out;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+@keyframes slideIn {
+  0% {
+    left: -300px;
+    opacity: 0;
+  }
+  80% {
+    left: 20px;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+  color: #42473c;
+}
+a:active {
+  color: black;
+}
