@@ -5,10 +5,11 @@ body {
   background-color: #c6d8b1;
   background-image: url(image.png);
   background-repeat: no-repeat;
-  position: relative;
+  background-position: center;
   background-size: cover;
   transform: translateX(-100%);
   animation: fadeIn 1s ease-in forwards;
+  min-height: 100vh;
 }
 @keyframes fadeIn {
   to {
@@ -52,9 +53,9 @@ input {
 }
 
 button {
-  font-size: 50px;
+  font-size: 6vmin;
   border-radius: 40%;
-  padding: 2px;
+  padding: 1vmin;
   background-color: #f4f0d6;
   color: rgb(2, 43, 2);
   border: none;
@@ -70,3 +71,24 @@ button:active {
   color: white;
   border: 1px solid black;
 }
+@media (max-width: 600px) {
+  button {
+    font-size: 7vw;
+    padding: 8px;
+    aspect-ratio: 1.5/1;
+  }
+
+  .content_box {
+    width: 85%;
+  }
+  .button_container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 50px;
+  }
+  #clear {
+    grid-column: span 3;
+    aspect-ratio: auto;
+    height: 60px;
+  }
+}
+
