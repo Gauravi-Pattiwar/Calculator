@@ -1,7 +1,4 @@
-*{
-  box-sizing: border-box;
-}
-  body {
+body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -49,7 +46,7 @@ input {
   margin-top: 10px;
 }
 .button_container {
-  margin: 50px 65px;
+  margin: 50px 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 5px;
@@ -79,9 +76,6 @@ button:active {
     font-size: 7vw;
     padding: 5px;
     aspect-ratio: 1.5/1;
-    width:100%;
-    height:60px;
-    
   }
 
   .content_box {
@@ -89,17 +83,14 @@ button:active {
   }
   .button_container {
     grid-template-columns: repeat(3, 1fr);
-    gap:10px;
-    margin: 20px;
   }
   #clear {
     grid-column: span 3;
     aspect-ratio: auto;
     height: 60px;
-    font-size:20px;
+    font-size: 20px;
   }
-  #delete{
-    font-size:16px;
+  #delete {
+    font-size: 20px;
   }
 }
-
