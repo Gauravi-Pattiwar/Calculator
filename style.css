@@ -8,13 +8,13 @@ body {
   align-items: center;
   background-image: url(background.png);
   background-position: no-repeat;
-  position: relative;
+  background-position: center;
   background-size: cover;
 }
 
 .title {
   animation: slideIn 1.2s ease-in-out;
-  font-size: 40px;
+  font-size: 3.5rem;
   font-family: cursive;
 }
 
@@ -38,3 +38,9 @@ a {
 a:active {
   color: black;
 }
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
